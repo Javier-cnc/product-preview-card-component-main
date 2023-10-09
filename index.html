@@ -15,22 +15,65 @@
     <title>Frontend Mentor | Product preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
+    <style>
+      body {
+        background-color: lightyellow;
+        margin: 0px;
+      }
+
+      .global-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .card-container {
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        height: 400px;
+        width: 400px;
+      }
+      .image-container {
+        flex: 1 1 0;
+        height: 100%;
+        display: relative;
+      }
+      .right-side-panel-container {
+        flex: 1 1 0;
+      }
+      .right-side-panel-global-container {
+        margin: 20px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <div class="global-container">
-      <div class="image-container">
-        <img src="./images/image-product-desktop.jpg" />
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/image-product-desktop.jpg" />
+        </div>
+        <div class="right-side-panel-container">
+          <div class="right-side-panel-global-container">
+            <span class="page-head">PERFUME</span>
+            <h2 class="page-title">Gabrielle Essence Eau De Parfum</h2>
+            <p class="description">
+              A floral, solar and voluptuous interpretation composed by Oliver
+              Podge, Perfumer-Creator for the House of CHANLEL.
+            </p>
+            <span class="price-label">$149.99</span>
+            <span class="old-price-label">$169.99</span>
+            <button class="cart-action-button">Add to Cart</button>
+          </div>
+        </div>
       </div>
-      <span class="page-head">PERFUME</span>
-      <h2 class="page-title">Gabrielle Essence Eau De Parfum</h2>
-      <p class="description">
-        A floral, solar and voluptuous interpretation composed by Oliver Podge,
-        Perfumer-Creator for the House of CHANLEL.
-      </p>
-      <span class="price-label">$149.99</span>
-      <span class="old-price-label">$169.99</span>
-      <button class="cart-action-button">Add to Cart</button>
     </div>
   </body>
 </html>
