@@ -1,0 +1,36 @@
+body {
+  background-color: lightyellow;
+  margin: 0px;
+}
+
+.global-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.card-container {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  height: 400px;
+  width: 400px;
+}
+.image-container {
+  flex: 1 1 0;
+  height: 100%;
+  display: relative;
+}
+.right-side-panel-container {
+  flex: 1 1 0;
+}
+.right-side-panel-global-container {
+  margin: 20px;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
