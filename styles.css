@@ -1,5 +1,14 @@
+/* Global variables */
+
 body {
-  background-color: lightyellow;
+  --light-green-color: #398569;
+  --dark-green-color: #1a4031;
+  --light-yellow-color: #f3eae3;
+  --light-gray-color: #97979f;
+}
+
+body {
+  background-color: var(--light-yellow-color);
   margin: 0px;
 }
 
@@ -33,4 +42,38 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.page-head {
+  color: var(--light-gray-color);
+}
+.description {
+  color: var(--light-gray-color);
+}
+
+.price-label {
+  color: var(--light-green-color);
+  font-weight: 800;
+  font-size: x-large;
+}
+
+.old-price-label {
+  text-decoration: line-through;
+  font-size: small;
+  margin-left: 10px;
+  position: relative;
+  top: -5px;
+}
+
+.cart-action-button {
+  background-color: var(--dark-green-color);
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 10px;
 }
